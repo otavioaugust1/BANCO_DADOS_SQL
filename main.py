@@ -20,6 +20,8 @@ for pasta in [pasta_saida]:
 
 print(f"Criando Pasta (base) com sucesso!... Tempo de execução: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
+
+
 # Dados para o banco de dados PostgreSQL
 db_host = ''          # Alterar para o IP do servidor de banco de dados
 db_port = ''          # Alterar para a porta do servidor de banco de dados
@@ -29,7 +31,7 @@ db_password = ''      # Alterar para a senha do usuário do banco de dados
 
 # Extrair dados do banco de dados
 start_date = pd.Timestamp("2013-01-01")     # Alterar para a data inicial
-end_date = pd.Timestamp("2013-01-01")       # Alterar para a data final
+end_date = pd.Timestamp("2013-02-01")       # Alterar para a data final
 
 # Lista de datas a serem processadas
 dates_to_process = pd.date_range(start=start_date, end=end_date, freq='D')

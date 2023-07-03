@@ -8,6 +8,7 @@ import os               # Biblioteca para manipulação de arquivos e pastas
 import shutil           # Biblioteca para manipulação de arquivos e pastas
 import psycopg2         # Biblioteca para conexão com o banco de dados PostgreSQL
 
+
 # Função para extrair dados de um único dia
 def extract_data_for_date(date, db_host, db_port, db_name, db_user, db_password):
     # Conexão com o banco de dados PostgreSQL
@@ -15,7 +16,7 @@ def extract_data_for_date(date, db_host, db_port, db_name, db_user, db_password)
     cursor = conn.cursor()
 
     # Leitura do arquivo SQL
-    with open('sql/sisreg_producao.sql', 'r') as sql_file:
+    with open(r'C:\Users\otavi\GitHub\SQL_SISREG\sisreg_producao.sql', 'r') as sql_file:
         query = sql_file.read()
 
     # Formatando a consulta SQL com a data
